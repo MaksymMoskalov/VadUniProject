@@ -11,17 +11,19 @@ import {
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
-import { autoReducer } from './autosReduser';
+import { studentReducer } from './studentsReduser';
+import { adminReducer } from './adminReduser';
 
-const favCarConfig = {
+const AdminConfig = {
   key: 'cars',
   version: 1,
   storage,
-  whitelist: ['favouriteCars'],
+  whitelist: ['isAdmin'],
 };
 
 const rootReducer = combineReducers({
-  cars: persistReducer(favCarConfig, autoReducer),
+  cars: persistReducer(AdminConfig, adminReducer),
+  statement: studentReducer,
 });
 
 export const store = configureStore({

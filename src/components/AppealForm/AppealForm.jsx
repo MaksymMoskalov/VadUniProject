@@ -1,9 +1,9 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { useDispatch } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 
 const RegisterPage = () => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const {
     register,
     handleSubmit,
@@ -12,6 +12,7 @@ const RegisterPage = () => {
   } = useForm();
 
   const onSubmit = data => {
+    console.log(data);
     reset();
   };
 
@@ -22,11 +23,10 @@ const RegisterPage = () => {
           {...register('name', { required: true })}
           type="text"
           className="form__field"
-          placeholder="Name"
         />
-        <label className="form__label">Name</label>
+        <label className="form__label">ПІБ</label>
         {errors.name && (
-          <span className="error-message">This field is required</span>
+          <span className="error-message">Це поле є обов'язковим</span>
         )}
       </div>
 
@@ -35,31 +35,63 @@ const RegisterPage = () => {
           {...register('email', { required: true })}
           type="email"
           className="form__field"
-          placeholder="Email"
         />
-        <label className="form__label">Email</label>
+        <label className="form__label">Електронна пошта</label>
         {errors.email && (
-          <span className="error-message">This field is required</span>
+          <span className="error-message">Це поле є обов'язковим</span>
         )}
       </div>
 
       <div className="form__group field">
         <input
-          {...register('password', { required: true, minLength: 7 })}
-          type="password"
+          {...register('course', { required: true })}
+          type="text"
           className="form__field"
-          placeholder="Password"
         />
-        <label className="form__label">Password</label>
-        {errors.password && (
-          <span className="error-message">
-            Password must contain at least 7 characters
-          </span>
+        <label className="form__label">Ваш курс</label>
+        {errors.course && (
+          <span className="error-message">Це поле є обов'язковим</span>
+        )}
+      </div>
+
+      <div className="form__group field">
+        <input
+          {...register('specialty', { required: true })}
+          type="text"
+          className="form__field"
+        />
+        <label className="form__label">Ваша спеціальність</label>
+        {errors.specialty && (
+          <span className="error-message">Це поле є обов'язковим</span>
+        )}
+      </div>
+
+      <div className="form__group field">
+        <input
+          {...register('group', { required: true })}
+          type="text"
+          className="form__field"
+        />
+        <label className="form__label">Номер вашої групи</label>
+        {errors.group && (
+          <span className="error-message">Це поле є обов'язковим</span>
+        )}
+      </div>
+
+      <div className="form__group field">
+        <input
+          {...register('statement', { required: true })}
+          type="text"
+          className="form__field"
+        />
+        <label className="form__label">Текст звернення</label>
+        {errors.statement && (
+          <span className="error-message">Це поле є обов'язковим</span>
         )}
       </div>
 
       <button type="submit" className="login-btn">
-        Sign Up
+        Відправити
       </button>
     </form>
   );
