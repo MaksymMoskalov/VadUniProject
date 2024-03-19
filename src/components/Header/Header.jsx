@@ -11,9 +11,6 @@ export const Header = () => {
         <NavLink to={'/catalog'} className="header-link">
           Catalog
         </NavLink>
-        <NavLink to={'/favorites'} className="header-link">
-          Favorites
-        </NavLink>
       </StyledNavigation>
     </StyledHeader>
   );

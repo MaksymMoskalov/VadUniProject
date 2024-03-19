@@ -10,7 +10,6 @@ import {
   selectCars,
   selectBrandFilter,
 } from '../../redux/cars.selectors';
-import { Filter } from 'components/Filter/Filter';
 import { CarModal } from 'components/Modal/Modal';
 import { handlModalClose } from '../../redux/autosReduser';
 import { Loader } from 'components/Loader/Loader';
@@ -46,23 +45,22 @@ const Catalog = () => {
     return filteredCars;
   };
   const carsByBrand = filteredCars();
-  return (
-    <>
-      <CatalogSection>
-        <Filter />
-        <CarList openModal={toglModal} cars={carsByBrand} />
-        {fact >= total || fact === 0 ? (
-          <></>
-        ) : (
-          <LoadMore type="button" onClick={onLoadMore}>
-            Load more
-          </LoadMore>
-        )}
-        {isLoading && <Loader />}
-      </CatalogSection>
-      {openModal && <CarModal closeModal={toglModal} />}
-    </>
-  );
+  // return (
+  //   <>
+  //     <CatalogSection>
+  //       <CarList openModal={toglModal} cars={carsByBrand} />
+  //       {fact >= total || fact === 0 ? (
+  //         <></>
+  //       ) : (
+  //         <LoadMore type="button" onClick={onLoadMore}>
+  //           Load more
+  //         </LoadMore>
+  //       )}
+  //       {isLoading && <Loader />}
+  //     </CatalogSection>
+  //     {openModal && <CarModal closeModal={toglModal} />}
+  //   </>
+  // );
 };
 
 export default Catalog;

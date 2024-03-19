@@ -11,18 +11,18 @@ export const CarList = ({ openModal, cars }) => {
     openModal();
   };
 
-  return (
-    <StyledCarList>
-      {cars !== null &&
-        cars.map(car => {
-          return (
-            <CarItem
-              carItemData={car}
-              key={car.id}
-              openModal={() => vievModal(car.id)}
-            />
-          );
-        })}
-    </StyledCarList>
-  );
+  // return (
+  //   <StyledCarList>
+  //     {cars !== null &&
+  //       cars.map(car => {
+  //         return (
+  //           <CarItem
+  //             carItemData={car}
+  //             key={car.id}
+  //             openModal={() => vievModal(car.id)}
+  //           />
+  //         );
+  //       })}
+  //   </StyledCarList>
+  // );
 };

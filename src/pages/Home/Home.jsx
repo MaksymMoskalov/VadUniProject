@@ -3,8 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { handlResetCatalog } from '../../redux/autosReduser';
 import { selectIsLoading } from '../../redux/cars.selectors';
 import { Loader } from 'components/Loader/Loader';
+import RegisterPage from 'components/AppealForm/AppealForm';
 
-import homeImg from '../../img/HomePage/home.png';
+// import homeImg from '../../img/HomePage/home.png';
 
 const Home = () => {
   const disputch = useDispatch();
@@ -12,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     disputch(handlResetCatalog());
   }, [disputch]);
-  return;
+  return <RegisterPage />;
 };
 
 export default Home;
