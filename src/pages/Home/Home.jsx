@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 // import { useDispatch, useSelector } from 'react-redux';
 // import { handlResetCatalog } from '../../redux/studentsReduser';
 // import { selectIsLoading } from '../../redux/cars.selectors';
@@ -8,10 +8,6 @@ import RegisterPage from 'components/AppealForm/AppealForm';
 // import homeImg from '../../img/HomePage/home.png';
 
 const Home = () => {
-  // const disputch = useDispatch();
-
-  // useEffect(() => {}, []);
-
   return <RegisterPage />;
 };
 

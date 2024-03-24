@@ -1,9 +1,10 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-// import { useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { addStatementThunk } from '../../redux/studentsOperations';
 
 const RegisterPage = () => {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const {
     register,
     handleSubmit,
@@ -12,6 +13,7 @@ const RegisterPage = () => {
   } = useForm();
 
   const onSubmit = data => {
+    dispatch(addStatementThunk(data));
     console.log(data);
     reset();
   };

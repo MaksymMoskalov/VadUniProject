@@ -22,7 +22,7 @@ const AdminConfig = {
 };
 
 const rootReducer = combineReducers({
-  cars: persistReducer(AdminConfig, adminReducer),
+  admin: persistReducer(AdminConfig, adminReducer),
   statement: studentReducer,
 });
 
