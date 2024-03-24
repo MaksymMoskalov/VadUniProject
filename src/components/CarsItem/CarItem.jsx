@@ -1,11 +1,15 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { selectFavouriteCars } from '../../redux/cars.selectors';
+import { deleteStatementThunk } from '../../redux/studentsOperations';
 
 export const StudentItem = ({ studentItemData, openModal }) => {
-  //   const dispatch = useDispatch();
+  const dispatch = useDispatch();
   //   const cars = useSelector(selectFavouriteCars);
 
-  const { name, course, specialty, statement, email } = studentItemData;
+  const { name, course, specialty, statement, email, id } = studentItemData;
+
+  const deleteStatement = id => {
+    dispatch(deleteStatementThunk(id));
+  };
 
   return (
     <li>
@@ -16,6 +20,7 @@ export const StudentItem = ({ studentItemData, openModal }) => {
         <p>{specialty}</p>
       </div>
       <p>statement{statement}</p>
+      <button onClick={() => deleteStatement(id)}>Видалити</button>
     </li>
     // <StyledCarItem>
     //   <FavoutiteBtn onClick={() => addToFavourite(carItemData)} type="button">
