@@ -8,7 +8,7 @@ import RegisterPage from 'components/AppealForm/AppealForm';
 // import homeImg from '../../img/HomePage/home.png';
 
 const Home = () => {
-  return <RegisterPage />;
+  return;
 };
 
 export default Home;

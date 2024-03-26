@@ -16,7 +16,7 @@ const Catalog = () => {
   // const page = useSelector(selectPage);
   // const cars = useSelector(selectCars);
   // const brandFilter = useSelector(selectBrandFilter);
-  const [openModal, setOpenModal] = useState(false);
+  const [openModal, setOpenModal] = useState(true);
 
   useEffect(() => {
     disputch(allStatementsThunk());
