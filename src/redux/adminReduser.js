@@ -14,4 +14,5 @@ const adminSlice = createSlice({
   },
 });
 
+export const { handlIsAdmin } = adminSlice.actions;
 export const adminReducer = adminSlice.reducer;

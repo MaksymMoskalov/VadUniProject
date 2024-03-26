@@ -17,10 +17,9 @@ export const CarModalContent = styled.div`
   position: relative;
 
   display: block;
-  width: 460px;
-  min-height: 600px;
-  max-height: 700px;
-  padding: 40px;
+  width: 260px;
+  height: 220px;
+  padding: 20px;
   border-radius: 24px;
   background-color: white;
 
@@ -38,7 +37,7 @@ export const ExitBtn = styled.button`
   width: 24px;
   height: 24px;
   top: 16px;
-  left: 501px;
+  left: 264px;
 
   padding: 0;
   margin: 0;
@@ -51,4 +50,32 @@ export const ExitBtn = styled.button`
     width: 24px;
     height: 24px;
   }
+`;
+
+export const LoginInp = styled.input`
+  height: 28px;
+  width: 240px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+
+  font-size: 16px;
+`;
+
+export const AdminForm = styled.form`
+  margin-top: 40px;
+
+  .form__label {
+    margin-bottom: 4px;
+  }
+`;
+
+export const SubmitBtn = styled.button`
+  display: block;
+  margin: 0 auto;
+  margin-top: 24px;
+  font-size: 16px;
+
+  width: 130px;
+  height: 35px;
+  border-radius: 8px;
 `;

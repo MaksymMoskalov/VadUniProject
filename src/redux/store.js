@@ -15,7 +15,7 @@ import { studentReducer } from './studentsReduser';
 import { adminReducer } from './adminReduser';
 
 const AdminConfig = {
-  key: 'cars',
+  key: 'admin',
   version: 1,
   storage,
   whitelist: ['isAdmin'],

@@ -1,6 +1,6 @@
 import { StudentItem } from 'components/CarsItem/CarItem';
 import { StyledCarList } from './CarList.styled';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 // import { exactCarThunk } from '../../redux/studentsOperations';
 import { selectStatements } from '../../redux/cars.selectors';
 
