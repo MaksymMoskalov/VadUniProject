@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/VadUniProject/static/css/main.15ff5e99.css",
+    "main.js": "/VadUniProject/static/js/main.8526ad95.js",
+    "static/js/651.98b69ff0.chunk.js": "/VadUniProject/static/js/651.98b69ff0.chunk.js",
+    "static/js/129.977dd554.chunk.js": "/VadUniProject/static/js/129.977dd554.chunk.js",
+    "static/js/29.bfda8324.chunk.js": "/VadUniProject/static/js/29.bfda8324.chunk.js",
+    "static/media/Home.jpg": "/VadUniProject/static/media/Home.9a2f6bb7c9bec574c478.jpg",
+    "static/media/logo.png": "/VadUniProject/static/media/logo.9979d781097b4ee8a90e.png",
+    "index.html": "/VadUniProject/index.html",
+    "main.15ff5e99.css.map": "/VadUniProject/static/css/main.15ff5e99.css.map",
+    "main.8526ad95.js.map": "/VadUniProject/static/js/main.8526ad95.js.map",
+    "651.98b69ff0.chunk.js.map": "/VadUniProject/static/js/651.98b69ff0.chunk.js.map",
+    "129.977dd554.chunk.js.map": "/VadUniProject/static/js/129.977dd554.chunk.js.map",
+    "29.bfda8324.chunk.js.map": "/VadUniProject/static/js/29.bfda8324.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15ff5e99.css",
+    "static/js/main.8526ad95.js"
+  ]
+}
