@@ -1,21 +1,23 @@
 {
   "files": {
     "main.css": "/VadUniProject/static/css/main.15ff5e99.css",
-    "main.js": "/VadUniProject/static/js/main.8526ad95.js",
-    "static/js/651.98b69ff0.chunk.js": "/VadUniProject/static/js/651.98b69ff0.chunk.js",
-    "static/js/129.977dd554.chunk.js": "/VadUniProject/static/js/129.977dd554.chunk.js",
-    "static/js/29.bfda8324.chunk.js": "/VadUniProject/static/js/29.bfda8324.chunk.js",
+    "main.js": "/VadUniProject/static/js/main.cdcad0bb.js",
+    "static/js/165.44359765.chunk.js": "/VadUniProject/static/js/165.44359765.chunk.js",
+    "static/js/214.d5d2c2cd.chunk.js": "/VadUniProject/static/js/214.d5d2c2cd.chunk.js",
+    "static/js/134.c6e750b9.chunk.js": "/VadUniProject/static/js/134.c6e750b9.chunk.js",
+    "static/js/508.48346b08.chunk.js": "/VadUniProject/static/js/508.48346b08.chunk.js",
     "static/media/Home.jpg": "/VadUniProject/static/media/Home.9a2f6bb7c9bec574c478.jpg",
     "static/media/logo.png": "/VadUniProject/static/media/logo.9979d781097b4ee8a90e.png",
     "index.html": "/VadUniProject/index.html",
     "main.15ff5e99.css.map": "/VadUniProject/static/css/main.15ff5e99.css.map",
-    "main.8526ad95.js.map": "/VadUniProject/static/js/main.8526ad95.js.map",
-    "651.98b69ff0.chunk.js.map": "/VadUniProject/static/js/651.98b69ff0.chunk.js.map",
-    "129.977dd554.chunk.js.map": "/VadUniProject/static/js/129.977dd554.chunk.js.map",
-    "29.bfda8324.chunk.js.map": "/VadUniProject/static/js/29.bfda8324.chunk.js.map"
+    "main.cdcad0bb.js.map": "/VadUniProject/static/js/main.cdcad0bb.js.map",
+    "165.44359765.chunk.js.map": "/VadUniProject/static/js/165.44359765.chunk.js.map",
+    "214.d5d2c2cd.chunk.js.map": "/VadUniProject/static/js/214.d5d2c2cd.chunk.js.map",
+    "134.c6e750b9.chunk.js.map": "/VadUniProject/static/js/134.c6e750b9.chunk.js.map",
+    "508.48346b08.chunk.js.map": "/VadUniProject/static/js/508.48346b08.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.15ff5e99.css",
-    "static/js/main.8526ad95.js"
+    "static/js/main.cdcad0bb.js"
   ]
 }
