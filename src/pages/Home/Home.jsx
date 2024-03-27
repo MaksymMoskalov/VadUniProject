@@ -16,9 +16,9 @@ import {
   ButtonWrapper,
   LogoImg,
 } from './Home.styled';
-import { CarModal } from 'components/Modal/Modal';
+import { StudentModal } from 'components/Modal/StudentModal';
 import { AdminModal } from 'components/Modal/AdminModal';
-import { selectisAdmin } from '../../redux/cars.selectors';
+import { selectisAdmin } from '../../redux/students.selectors';
 import { useSelector } from 'react-redux';
 
 const Home = () => {
@@ -53,7 +53,7 @@ const Home = () => {
         </ButtonWrapper>
       </HomeSection>
       {openAdminModal && <AdminModal closeModal={toglAdminModal} />}
-      {openMainModal && <CarModal closeModal={toglMainModal} />}
+      {openMainModal && <StudentModal closeModal={toglMainModal} />}
     </>
   );
 };

@@ -9,12 +9,17 @@ const INITIAL_STATE = {
   statements: [],
   isLoading: false,
   error: null,
+  filter: [1, 6],
 };
 
 const studentSlice = createSlice({
   name: 'statements',
   initialState: INITIAL_STATE,
-  reducers: {},
+  reducers: {
+    handlFiltration(state, action) {
+      state.filter = [action.payload.start, action.payload.end];
+    },
+  },
   extraReducers: builder =>
     builder
       .addCase(allStatementsThunk.fulfilled, (state, action) => {
@@ -58,4 +63,5 @@ const studentSlice = createSlice({
       ),
 });
 
+export const { handlFiltration } = studentSlice.actions;
 export const studentReducer = studentSlice.reducer;

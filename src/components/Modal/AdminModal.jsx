@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import {
-  CarModalContent,
+  ModalContent,
   Overlay,
   ExitBtn,
   LoginInp,
@@ -9,7 +9,7 @@ import {
   SubmitBtn,
 } from './AdminModal.styled';
 import { RxCross2 } from 'react-icons/rx';
-import { selectIsLoading } from '../../redux/cars.selectors';
+import { selectIsLoading } from '../../redux/students.selectors';
 import { Blocks } from 'react-loader-spinner';
 import { useForm } from 'react-hook-form';
 import { handlIsAdmin } from '../../redux/adminReduser';
@@ -45,7 +45,6 @@ export function AdminModal({ closeModal }) {
     register,
     handleSubmit,
     reset,
-
     formState: { errors },
   } = useForm();
 
@@ -59,7 +58,7 @@ export function AdminModal({ closeModal }) {
 
   return (
     <Overlay onClick={closeOnBackdrop}>
-      <CarModalContent>
+      <ModalContent>
         <ExitBtn onClick={closeModal}>
           <RxCross2 className="cross" />
         </ExitBtn>
@@ -90,7 +89,7 @@ export function AdminModal({ closeModal }) {
             />
           </div>
         )}
-      </CarModalContent>
+      </ModalContent>
     </Overlay>
   );
 }

@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { deleteStatementThunk } from '../../redux/studentsOperations';
+import { StyledStudentItem } from './StudentItem.styled';
 
 export const StudentItem = ({ studentItemData, openModal }) => {
   const dispatch = useDispatch();
@@ -13,7 +14,7 @@ export const StudentItem = ({ studentItemData, openModal }) => {
   };
 
   return (
-    <li>
+    <StyledStudentItem>
       <h1>{id}</h1>
       <p>{name}</p>
       <p>{email}</p>
@@ -24,6 +25,6 @@ export const StudentItem = ({ studentItemData, openModal }) => {
       </div>
       <p>{statement}</p>
       <button onClick={() => deleteStatement(id)}>Видалити</button>
-    </li>
+    </StyledStudentItem>
   );
 };

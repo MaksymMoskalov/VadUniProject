@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { CarModalContent, Overlay, ExitBtn } from './Modal.styled';
+import { ModalContent, Overlay, ExitBtn } from './StudentModal.styled';
 import { RxCross2 } from 'react-icons/rx';
-import { selectIsLoading } from '../../redux/cars.selectors';
+import { selectIsLoading } from '../../redux/students.selectors';
 import { Blocks } from 'react-loader-spinner';
 import RegisterPage from 'components/AppealForm/AppealForm';
 
-export function CarModal({ closeModal }) {
+export function StudentModal({ closeModal }) {
   const isLoading = useSelector(selectIsLoading);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ export function CarModal({ closeModal }) {
 
   return (
     <Overlay onClick={closeOnBackdrop}>
-      <CarModalContent>
+      <ModalContent>
         <ExitBtn onClick={closeModal}>
           <RxCross2 className="cross" />
         </ExitBtn>
@@ -50,7 +50,7 @@ export function CarModal({ closeModal }) {
             />
           </div>
         )}
-      </CarModalContent>
+      </ModalContent>
     </Overlay>
   );
 }

@@ -1,17 +1,13 @@
-import { NavLink } from 'react-router-dom';
-import { StyledHeader, StyledNavigation } from './Header.styled';
+import { StyledHeader, HeaderLogo } from './Header.styled';
+import logo from '../../img/logo.png';
 
-export const Header = () => {
+export const CatalogHeader = () => {
   return (
     <StyledHeader>
-      <StyledNavigation>
-        <NavLink to={'/'} className="header-link">
-          Home
-        </NavLink>
-        <NavLink to={'/catalog'} className="header-link">
-          Catalog
-        </NavLink>
-      </StyledNavigation>
+      <HeaderLogo src={logo} alt="logo" />
+      <p className="head-text">
+        Державний університет інфраструктури та технологій адміністрування заяв
+      </p>
     </StyledHeader>
   );
 };

@@ -13,7 +13,7 @@ export const Overlay = styled.div`
   z-index: 1200;
 `;
 
-export const CarModalContent = styled.div`
+export const ModalContent = styled.div`
   position: relative;
 
   display: block;

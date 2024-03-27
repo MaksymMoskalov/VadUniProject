@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
-import { selectisAdmin } from '../redux/cars.selectors';
+import { selectisAdmin } from '../redux/students.selectors';
 
 const PrivateRoute = ({ children, redirectTo = '/catalog' }) => {
   const authenticated = useSelector(selectisAdmin);
