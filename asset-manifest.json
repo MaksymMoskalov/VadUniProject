@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/VadUniProject/static/css/main.15ff5e99.css",
-    "main.js": "/VadUniProject/static/js/main.4d362ff8.js",
-    "static/js/165.5756e69b.chunk.js": "/VadUniProject/static/js/165.5756e69b.chunk.js",
+    "main.js": "/VadUniProject/static/js/main.10518820.js",
+    "static/js/165.95230d22.chunk.js": "/VadUniProject/static/js/165.95230d22.chunk.js",
     "static/js/980.466b215c.chunk.js": "/VadUniProject/static/js/980.466b215c.chunk.js",
     "static/js/134.c6e750b9.chunk.js": "/VadUniProject/static/js/134.c6e750b9.chunk.js",
     "static/js/508.48346b08.chunk.js": "/VadUniProject/static/js/508.48346b08.chunk.js",
@@ -10,14 +10,14 @@
     "static/media/logo.png": "/VadUniProject/static/media/logo.9979d781097b4ee8a90e.png",
     "index.html": "/VadUniProject/index.html",
     "main.15ff5e99.css.map": "/VadUniProject/static/css/main.15ff5e99.css.map",
-    "main.4d362ff8.js.map": "/VadUniProject/static/js/main.4d362ff8.js.map",
-    "165.5756e69b.chunk.js.map": "/VadUniProject/static/js/165.5756e69b.chunk.js.map",
+    "main.10518820.js.map": "/VadUniProject/static/js/main.10518820.js.map",
+    "165.95230d22.chunk.js.map": "/VadUniProject/static/js/165.95230d22.chunk.js.map",
     "980.466b215c.chunk.js.map": "/VadUniProject/static/js/980.466b215c.chunk.js.map",
     "134.c6e750b9.chunk.js.map": "/VadUniProject/static/js/134.c6e750b9.chunk.js.map",
     "508.48346b08.chunk.js.map": "/VadUniProject/static/js/508.48346b08.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.15ff5e99.css",
-    "static/js/main.4d362ff8.js"
+    "static/js/main.10518820.js"
   ]
 }
