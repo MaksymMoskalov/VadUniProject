@@ -63,6 +63,7 @@ export function AdminModal({ closeModal }) {
           <RxCross2 className="cross" />
         </ExitBtn>
 
+        <p className="admin-title">Авторизація адміністратора</p>
         <AdminForm onSubmit={handleSubmit(onSubmit)}>
           <div className="form__group field">
             <div className="form__label">

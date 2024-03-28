@@ -5,7 +5,7 @@ import { addStatementThunk } from '../../redux/studentsOperations';
 import { StyledForm } from './AppealForm.styled';
 import { courses, faculties, groupsByFacultyAndCourse } from './universityData';
 
-const RegisterPage = () => {
+const RegisterPage = ({ close }) => {
   const dispatch = useDispatch();
   const [selectedFaculty, setSelectedFaculty] = useState(null);
   const {
@@ -25,6 +25,7 @@ const RegisterPage = () => {
     dispatch(addStatementThunk(data));
     console.log(data);
     reset();
+    close();
   };
 
   return (
@@ -145,7 +146,7 @@ const RegisterPage = () => {
           <label className="form__label">Текст звернення</label>
           {errors.statement && <span className="error-message">{' *'}</span>}
         </div>
-        <input
+        <textarea
           {...register('statement', { required: true })}
           type="text"
           className={

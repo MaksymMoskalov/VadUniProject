@@ -38,7 +38,7 @@ export function StudentModal({ closeModal }) {
           <RxCross2 className="cross" />
         </ExitBtn>
 
-        <RegisterPage></RegisterPage>
+        <RegisterPage close={closeModal} />
 
         {isLoading && (
           <div className="modal-loader">

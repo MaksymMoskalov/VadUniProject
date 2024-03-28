@@ -30,6 +30,10 @@ export const ModalContent = styled.div`
     margin-right: auto;
     margin-top: 100px;
   }
+
+  .admin-title {
+    margin-top: 20px;
+  }
 `;
 
 export const ExitBtn = styled.button`

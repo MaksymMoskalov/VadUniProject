@@ -25,11 +25,13 @@ export const ModalContent = styled.div`
   background-color: white;
 
   .modal-loader {
+    position: absolute;
+    top: 302px;
+    left: 367px;
     display: block;
     width: 100px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
   }
 `;
 

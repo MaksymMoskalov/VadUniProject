@@ -4,6 +4,7 @@ import {
   addStatementThunk,
   deleteStatementThunk,
 } from './studentsOperations';
+import Notiflix from 'notiflix';
 
 const INITIAL_STATE = {
   statements: [],
@@ -30,6 +31,7 @@ const studentSlice = createSlice({
       .addCase(addStatementThunk.fulfilled, (state, action) => {
         state.isLoading = false;
         state.statements.push(action.payload);
+        Notiflix.Notify.success('Заява успішно відправлена');
         state.error = null;
       })
       .addCase(deleteStatementThunk.fulfilled, (state, action) => {
