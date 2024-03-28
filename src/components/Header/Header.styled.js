@@ -17,6 +17,22 @@ export const StyledHeader = styled.header`
   .head-text {
     margin-left: 30px;
   }
+
+  .logout-btn {
+    font-size: 16px;
+    width: 70px;
+    height: 35px;
+    margin-left: auto;
+    border-radius: 8px;
+    border-color: transparent;
+    color: #fff;
+    background-color: #4054ff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: #2c3ab2;
+    }
+  }
 `;
 
 export const HeaderLogo = styled.img`

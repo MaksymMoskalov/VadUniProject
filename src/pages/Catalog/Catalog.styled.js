@@ -11,4 +11,5 @@ export const CatalogContainer = styled.div`
 
 export const CatalogTitle = styled.h1`
   text-align: center;
+  margin-bottom: 30px;
 `;

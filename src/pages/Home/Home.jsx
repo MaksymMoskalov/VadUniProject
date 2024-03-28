@@ -44,9 +44,11 @@ const Home = () => {
         <h1>Державний університет інфраструктури та технологій</h1>
         <h2>Подача заяв на поселення в гуртожиток</h2>
         <ButtonWrapper>
-          <AppealButton onClick={toglMainModal}>Подати заяву</AppealButton>
+          <AppealButton onClick={toglMainModal} type="button">
+            Подати заяву
+          </AppealButton>
           {!isAdmin && (
-            <AppealButton onClick={toglAdminModal}>
+            <AppealButton onClick={toglAdminModal} type="button">
               Я Адміністратор
             </AppealButton>
           )}

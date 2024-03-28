@@ -13,7 +13,7 @@ import {
   CatalogContainer,
   CatalogTitle,
 } from './Catalog.styled';
-import { handlIsAdmin } from '../../redux/adminReduser';
+
 import { CatalogHeader } from 'components/Header/Header';
 import { Filter } from 'components/Filter/Filter';
 
@@ -26,10 +26,6 @@ const Catalog = () => {
   useEffect(() => {
     disputch(allStatementsThunk());
   }, [disputch]);
-
-  const logOut = () => {
-    disputch(handlIsAdmin());
-  };
 
   const filteredStatements = () => {
     return statements.filter(statement => {
@@ -46,7 +42,7 @@ const Catalog = () => {
         <CatalogTitle>Заяви на поселення в гуртожиток</CatalogTitle>
         <Filter />
         <StudentsList studentStatements={afterFiltration} />
-        <button onClick={logOut}>Вихід</button>
+
         {isLoading && <Loader />}
       </CatalogSection>
     </CatalogContainer>

@@ -15,15 +15,24 @@ export const StudentItem = ({ studentItemData, openModal }) => {
 
   return (
     <StyledStudentItem>
-      <h1>{id}</h1>
-      <p>{name}</p>
-      <p>{email}</p>
-      <p>{phone}</p>
-      <div>
-        <p>{course}</p>
-        <p>{specialty}</p>
+      <p className="item-description">ПІБ студента:</p>
+      <p className="item-text">{name}</p>
+      <p className="item-description">Електронна пошта:</p>
+      <p className="item-text">{email}</p>
+      <p className="item-description">Номер телефону:</p>
+      <p className="item-text">{phone}</p>
+      <div className="text-wrapper">
+        <div>
+          <p className="item-description">Курс:</p>
+          <p className="item-text">{course}</p>
+        </div>
+        <div>
+          <p className="item-description">Спеціальність:</p>
+          <p className="item-text">{specialty}</p>
+        </div>
       </div>
-      <p>{statement}</p>
+      <p className="item-description">Текст заяви:</p>
+      <p className="statement-text">{statement}</p>
       <button onClick={() => deleteStatement(id)}>Видалити</button>
     </StyledStudentItem>
   );
