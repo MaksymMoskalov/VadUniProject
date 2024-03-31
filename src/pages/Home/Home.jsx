@@ -37,11 +37,11 @@ const Home = () => {
   return (
     <>
       <HomeSection>
-        <ImgWrapper>
+        {/* <ImgWrapper>
           <HomeImg src={homeImg} alt="" />
-        </ImgWrapper>
+        </ImgWrapper> */}
         <LogoImg src={logo} alt="" width={150} />
-        <h1>Державний університет інфраструктури та технологій</h1>
+        <h1>Державний університет інформаційно-комунікаційних технологій</h1>
         <h2>Подача заяв на поселення в гуртожиток</h2>
         <ButtonWrapper>
           <AppealButton onClick={toglMainModal} type="button">

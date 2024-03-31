@@ -14,7 +14,8 @@ export const CatalogHeader = () => {
     <StyledHeader>
       <HeaderLogo src={logo} alt="logo" />
       <p className="head-text">
-        Державний університет інфраструктури та технологій адміністрування заяв
+        Державний університет інформаційно-комунікаційних технологій
+        адміністрування заяв
       </p>
       <button onClick={logOut} className="logout-btn">
         Вихід

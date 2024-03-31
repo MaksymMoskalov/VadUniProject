@@ -14,7 +14,7 @@ export const HomeImg = styled.img`
 export const LogoImg = styled.img`
   margin: 0 auto;
   margin-bottom: 40px;
-  margin-top: 30px;
+  margin-top: 200px;
 `;
 
 export const AppealButton = styled.button`
