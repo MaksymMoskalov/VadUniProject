@@ -5,12 +5,12 @@ import React, { useState } from 'react';
 // import { Loader } from 'components/Loader/Loader';
 
 // import homeImg from '../../img/HomePage/home.png';
-import homeImg from '../../img/Home.jpg';
+// import homeImg from '../../img/Home.jpg';
 import logo from '../../img/logo.png';
 
 import {
-  ImgWrapper,
-  HomeImg,
+  // ImgWrapper,
+  // HomeImg,
   HomeSection,
   AppealButton,
   ButtonWrapper,
