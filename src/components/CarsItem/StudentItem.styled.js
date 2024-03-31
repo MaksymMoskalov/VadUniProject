@@ -20,10 +20,30 @@ export const StyledStudentItem = styled.li`
 
   .statement-text {
     width: 274px;
-    /* word-wrap: ; */
+    height: 160px;
+    overflow: auto;
   }
   .text-wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .button-wrapper {
+    display: flex;
+    margin-top: auto;
+    justify-content: space-between;
+  }
+
+  .item-buttons {
+    border-radius: 4px;
+    border-color: transparent;
+    color: #fff;
+    background-color: #4054ff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 16px;
+
+    &:hover {
+      background-color: #2c3ab2;
+    }
   }
 `;
