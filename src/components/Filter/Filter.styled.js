@@ -26,9 +26,7 @@ export const Form = styled.form`
   .filter-submit {
     font-size: 16px;
     height: 30px;
-  }
-
-  .filter-submit {
+    margin-left: 100px;
     border-radius: 8px;
     border-color: transparent;
     color: #fff;
@@ -38,5 +36,14 @@ export const Form = styled.form`
     &:hover {
       background-color: #2c3ab2;
     }
+  }
+
+  .form-group {
+  }
+  .form-select {
+    width: 320px;
+    height: 30px;
+    font-size: 16px;
+    margin-bottom: 8px;
   }
 `;

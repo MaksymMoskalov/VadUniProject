@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-export const CatalogSection = styled.section`
-  height: 100vh;
-`;
+export const CatalogSection = styled.section``;
 
 export const CatalogContainer = styled.div`
   padding-left: 200px;

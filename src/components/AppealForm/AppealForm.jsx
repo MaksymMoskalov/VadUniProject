@@ -21,6 +21,14 @@ const RegisterPage = ({ close }) => {
     setSelectedFaculty(faculty);
   };
 
+  const [inputValue, setInputValue] = useState('');
+
+  const handleInputChange = event => {
+    const { value } = event.target;
+    const filteredValue = value.replace(/[^0-9+-]/g, '');
+    setInputValue(filteredValue);
+  };
+
   const onSubmit = data => {
     dispatch(addStatementThunk(data));
     console.log(data);
@@ -71,6 +79,11 @@ const RegisterPage = ({ close }) => {
           {...register('phone', { required: true })}
           type="text"
           className={errors.phone ? 'form-input input-error' : 'form-input'}
+          autocomplete="off"
+          value={inputValue}
+          onChange={handleInputChange}
+          placeholder="+38-0000=0000"
+          maxLength={12}
         />
       </div>
 

@@ -1,22 +1,22 @@
 export const faculties = [
   {
-    value: 'NNIZI',
+    value: 'ННІЗІ',
     label: 'Навчально-науковий інститут захисту інформації',
   },
   {
-    value: 'NNIIT',
+    value: 'ННІІТ',
     label: 'Навчально-науковий інститут Інформаційних технологій',
   },
   {
-    value: 'NNIT',
+    value: 'ННІТ',
     label: 'Навчально-науковий інститут Телекомунікацій',
   },
   {
-    value: 'NNIMTP',
+    value: 'ННІМТП',
     label: 'Навчально-науковий інститут менеджменту та підприємництва',
   },
   {
-    value: 'NNIZTDN',
+    value: 'ННІЗТДН',
     label: 'Навчально-науковий інститут заочного та дистанційного навчання',
   },
 ];
@@ -24,7 +24,7 @@ export const faculties = [
 export const courses = [1, 2, 3, 4, 5, 6];
 
 export const groupsByFacultyAndCourse = {
-  NNIZI: {
+  ННІЗІ: {
     1: [
       'БСД-11',
       'БСД-12',
@@ -71,7 +71,7 @@ export const groupsByFacultyAndCourse = {
       'УБДМ-61',
     ],
   },
-  NNIIT: {
+  ННІІТ: {
     1: [
       'ТЦР-11',
       'ТЦР-12',
@@ -173,7 +173,7 @@ export const groupsByFacultyAndCourse = {
       'КСДМ-62',
     ],
   },
-  NNIT: {
+  ННІТ: {
     1: [
       'САД-11',
       'САД-12',
@@ -215,7 +215,7 @@ export const groupsByFacultyAndCourse = {
       'ТСДМ-64',
     ],
   },
-  NNIMTP: {
+  ННІМТП: {
     1: [
       'АЗД-11',
       'АЗД-12',
@@ -271,7 +271,7 @@ export const groupsByFacultyAndCourse = {
       'УІДМ-61',
     ],
   },
-  NNIZTDN: {
+  ННІЗТДН: {
     1: [],
     2: [],
     3: [],

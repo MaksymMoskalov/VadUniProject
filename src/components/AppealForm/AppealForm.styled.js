@@ -65,4 +65,10 @@ export const StyledForm = styled.form`
     background-color: lightblue;
     border: 1px solid transparent;
   }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 `;

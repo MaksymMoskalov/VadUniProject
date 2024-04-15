@@ -11,6 +11,7 @@ const INITIAL_STATE = {
   isLoading: false,
   error: null,
   filter: [1, 6],
+  facultFilter: null,
 };
 
 const studentSlice = createSlice({
@@ -19,6 +20,9 @@ const studentSlice = createSlice({
   reducers: {
     handlFiltration(state, action) {
       state.filter = [action.payload.start, action.payload.end];
+    },
+    handlFacultFiltration(state, action) {
+      state.facultFilter = action.payload;
     },
   },
   extraReducers: builder =>
@@ -65,5 +69,5 @@ const studentSlice = createSlice({
       ),
 });
 
-export const { handlFiltration } = studentSlice.actions;
+export const { handlFiltration, handlFacultFiltration } = studentSlice.actions;
 export const studentReducer = studentSlice.reducer;
